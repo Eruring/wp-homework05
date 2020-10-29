@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery 구현</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>HomeWork_05week</title>
+    <style>
+         .container1 {
+        margin: auto;
+        width: 1215px;}
+       .gallery{padding-top: 25px;
+
+       }
+       </style>
+</head>
+<body>
+    <header>
+    <button id="menu-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <h3>산악회 메뉴</h3>
+  </header>
+
+  <nav id="side-menu" class="hidden">
+    <ul>
+      <li><a href="./index.html">홈화면</a></li>
+      <li><a href="./ybsan.html">용봉산</a></li>
+      <li><a href="./index.html">북한산</a></li>
+      <li><a href="./index.html">용문산</a></li>
+    </ul>
+  </nav>
+  <script>
+    // javascript 코드(다음 주 강의부터 다루게 됨)
+    let hidden = true;
+    const menuButton = document.getElementById('menu-button');
+    const sideMenu = document.getElementById('side-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (hidden) {
+        sideMenu.classList.remove('hidden');
+        hidden = false;
+      } else {
+        sideMenu.classList.add('hidden');
+        hidden = true;
+      }
+    });
+  </script>
+    <dic class="container"></dic>
+    <div class="container gallery">
+      <img src="https://t1.daumcdn.net/cfile/blog/99FE5E3359FF0F6803">
+      <img src="https://img1.yna.co.kr/etc/inner/KR/2016/10/06/AKR20161006060200805_01_i_P4.jpg">
+      <img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F2676D644518CD097310343" class="big">
+      <img src="https://lh3.googleusercontent.com/proxy/qWs6HSWINMuKqHVsD6h2H9XcqGsYSSxpRpJnIFfVT0xfZiUn5oDHaDMeotn5W_26BvIo9oEvBtneEGzrOV8jTHzyIrA3eKHxfoCORAoob8mIOvpsZDEfirKydj3JC9_S9Z411fpkHZtGxux5NyS7kg3NNyYlVvdXFLZf_KgBL8qDAGov" class="big">
+      <img src="https://image.ytn.co.kr/general/jpg/2020/0508/202005081829444507_img_01.jpg">
+      <img src="https://tour.hongseong.go.kr/images/tour/sub06/img_special_photo0601.jpg">
+      <img src="https://www.sanaktour.com/pds/blog/2017030201/68/20200116_002.jpg">
+      <img src="https://t1.daumcdn.net/cfile/blog/999690415B8DEE1F24">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKkB5wdUcokQRMQT-UmjfaCkpcNpvWPE30QQ&usqp=CAU">
+    </div>
+  </body>
+  </html>

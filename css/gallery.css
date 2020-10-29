@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(5, 200px);
+    grid-auto-rows: 150px;
+    grid-auto-flow: row dense;
+    margin: 40px auto;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 700ms;
+    opacity: 0.5;
+  }
+  
+  img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    z-index: 1;
+}
+
+img.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
